@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0px auto;
+    max-width: 1920px;
+    border: solid red 5px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.header {
+    display:flex;
+    width: 100%;
+    background: tomato;
+    border-radius: 5px 5px 0 0;
+    justify-content: flex-start;
+}
+
+.logo{
+    margin: 10px;
+    width: 250px;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+}
+
+.name_poke{
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content_pokemons{
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.status{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    width: 360px;
+}
+
+.footer{
+    display: flex;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer_poke{
+
+}
+
+.pokemon{
+    width: 85px;
+    border: solid silver;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(207, 198, 198);
+    cursor: pointer;
+}
+
+.pokemon_main{
+    width: 200px;
+    margin-left: 80px;
+    padding: 5px;
+}
+
+.pokemon:hover{
+    background-color: rgb(172, 76, 76);
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+@media (max-width:1000px) {
+
+    .wrapper{
+        border: solid red 4px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
+
+/* @media (min-width:1200px) {
+
+    .wrapper{
+        border: solid red 3px;
+    }
+
+} */

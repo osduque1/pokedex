@@ -8,10 +8,28 @@
         <title>Pokédex</title>
         <link rel="stylesheet" href="./assets/css/styles.css">
         <script type="text/javascript" src="./assets/js/events.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
 
     <body>
+        <div class="wrapper">
+            <header class="header">
+                <img class="logo" src="./assets/images/logo.svg" alt="logo">
+            </header>
 
+            <article class="main">
+                <div id="name_poke">
+                    <p class="name_poke">CHARIZARD</p>
+                    <div id="content_pokemons" class="content_pokemons"></div>
+                </div>
+                <div class="status">STATUS</div>
+            </article>
+
+            <footer class="footer">
+                <p>OTHERS</p>
+                <div id="footer_poke" class="footer_poke"></div>
+            </footer>
+        </div>
     </body>
 
 </html>
