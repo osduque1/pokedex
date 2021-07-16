@@ -2,10 +2,17 @@ body{
     background-color: black;
 }
 
+p{
+    font-family: cursive;
+    font-size: 22px;
+    color: #03bcda;
+    user-select: none;
+    font-weight: bold;
+}
+
 .wrapper{
     width: 90%;
     margin: 0px auto;
-    max-width: 1920px;
     border: solid red 5px;
     background-color: gray;
     border-radius: 10px;
@@ -41,7 +48,8 @@ body{
 .content_pokemons{
     padding: 10px;
     border-radius: 10px;
-    height: 200px;
+    margin: 10px;
+    height: 35vh;
 }
 
 .status{
@@ -49,8 +57,26 @@ body{
     padding: 10px;
     background-color: white;
     border-radius: 10px;
-    height: 250px;
     width: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+td{
+    font-family: cursive;
+    font-size: 22px;
+    color: #03bcda;
+    user-select: none;
+    font-weight: bold;
+}
+
+span{
+    color: red !important;
 }
 
 .footer{
@@ -61,14 +87,10 @@ body{
     flex-wrap: wrap;
 }
 
-.footer_poke{
-
-}
-
 .pokemon{
     width: 85px;
     border: solid silver;
-    border-radius: 40px;
+    border-radius: 28px;
     margin: 10px;
     padding: 5px;
     background-color: rgb(207, 198, 198);
@@ -76,9 +98,8 @@ body{
 }
 
 .pokemon_main{
-    width: 200px;
-    margin-left: 80px;
-    padding: 5px;
+    width: 205px;
+    margin-left: 65px;
 }
 
 .pokemon:hover{
@@ -86,7 +107,7 @@ body{
     box-shadow: 5px 5px 5px 5px black;
 }
 
-@media (max-width:1000px) {
+@media (min-width: 850px) and (max-width: 1200px) {
 
     .wrapper{
         border: solid red 4px;
@@ -95,12 +116,34 @@ body{
     .header {
         justify-content: center;
     }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_pokemons {
+        height: 10vh;
+    }
+
+    td{
+        font-size: 10px;
+    }
+
+    .status{
+        margin-top: 40px;
+    }
 }
 
-/* @media (min-width:1200px) {
+
+@media screen and (max-width: 1201px) {
 
     .wrapper{
         border: solid red 3px;
     }
 
-} */
+    .status{
+        margin-top: 150px;
+    }
+
+}
