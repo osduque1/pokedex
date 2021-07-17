@@ -1,7 +1,4 @@
 window.onload = () => {
-    let etiquetaAudio = document.createElement("audio");
-    etiquetaAudio.setAttribute("src", "./assets/audio/poke-theme.mp3");
-    etiquetaAudio.play();
     var footer = document.getElementById("footer_poke");
 
     for (let index = 1; index < 10; index++) {
@@ -16,7 +13,15 @@ window.onload = () => {
 
 function pokemon(id) {
     jQuery("img").remove(".pokemon_main");
-    jQuery("audio").remove(".audio_poke");
+    
+    // let etiquetaAudio = document.createElement("audio");
+    // etiquetaAudio.setAttribute("src", `./assets/audio/${id}.mp3`);
+    // etiquetaAudio.play();
+
+    var aud = new Audio();
+    aud.src = `./assets/audio/${id}.mp3`;
+    aud.play();
+
     let pokemon_main = document.getElementById("content_pokemons");
     let image_p = document.createElement("img");
     image_p.src = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
