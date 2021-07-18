@@ -99,7 +99,7 @@ span{
 
 .pokemon_main{
     width: 205px;
-    margin-left: 65px;
+    margin-left: 85px;
 }
 
 .pokemon:hover{
@@ -107,7 +107,7 @@ span{
     box-shadow: 5px 5px 5px 5px black;
 }
 
-@media (min-width: 850px) and (max-width: 1200px) {
+@media (min-width: 850px) and (max-width: 1009px) {
 
     .wrapper{
         border: solid red 4px;
@@ -131,19 +131,22 @@ span{
     }
 
     .status{
-        margin-top: 40px;
+        margin-top: 25px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_poke{
+        width: 450px;
+        margin-left: 90px;
     }
 }
 
-
-@media screen and (max-width: 1201px) {
-
-    .wrapper{
-        border: solid red 3px;
+@media (min-width: 1010px) and (max-width: 1099px){    
+    #footer_poke{
+        width: 600px;
     }
-
-    .status{
-        margin-top: 150px;
-    }
-
 }
