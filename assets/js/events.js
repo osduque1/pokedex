@@ -1,77 +1,11 @@
 const name_pokes = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise"]
-const description = [
-    {
-    "status": "001",
-    "level": "10",
-    "type": "Grass",
-    "hability": "Tackle",
-    "height": "1,1 m",
-    "weight": "90,1 Kg",
-    },
-    {
-    "status": "002",
-    "level": "100",
-    "type": "Grass",
-    "hability": "Tackle 2",
-    "height": "1,2 m",
-    "weight": "90,2 Kg",
-    },
-    {
-    "status": "003",
-    "level": "1000",
-    "type": "Grass",
-    "hability": "Tackle 3",
-    "height": "1,3 m",
-    "weight": "90,3 Kg",
-    },
-    {
-    "status": "004",
-    "level": "15",
-    "type": "Fire",
-    "hability": "Flames",
-    "height": "1,4 m",
-    "weight": "90,4 Kg",
-    },
-    {
-    "status": "005",
-    "level": "150",
-    "type": "Fire",
-    "hability": "Flames 2",
-    "height": "1,5 m",
-    "weight": "90,5 Kg",
-    },
-    {
-    "status": "006",
-    "level": "1500",
-    "type": "Fire",
-    "hability": "Flames 3",
-    "height": "1,6 m",
-    "weight": "90,6 Kg",
-    },
-    {
-    "status": "007",
-    "level": "20",
-    "type": "Water",
-    "hability": "Bubble",
-    "height": "1,7 m",
-    "weight": "90,7 Kg",
-    },
-    {
-    "status": "008",
-    "level": "200",
-    "type": "Water",
-    "hability": "Bubble 2",
-    "height": "1,8 m",
-    "weight": "90,8 Kg",
-    },
-    {
-    "status": "009",
-    "level": "2000",
-    "type": "Water",
-    "hability": "Bubble 3",
-    "height": "1,9 m",
-    "weight": "90,9 Kg",
-    }
+const [statuss, level, type, hability, height, weight] = [
+    ["001", "002", "003", "004", "005", "006", "007", "008", "009"],
+    ["10", "100", "1000", "15", "150", "1500", "20", "200", "2000"],
+    ["Grass", "Grass", "Grass", "Fire", "Fire", "Fire", "Water", "Water", "Water"],  
+    ["Tackle", "Tackle 2", "Tackle 3", "Flames", "Flames 2", "Flames 3", "Bubble", "Bubble 2", "Bubble 3"],
+    ["1,1 m", "1,2 m", "1,3 m", "1,4 m", "1,5 m", "1,6 m", "1,7 m", "1,8 m", "1,9 m"],
+    ["90,1 Kg", "90,2 Kg", "90,3 Kg", "90,4 Kg", "90,5 Kg", "90,6 Kg", "90,7 Kg", "90,8 Kg", "90,9 Kg"],
 ]
 
 window.onload = () => {
@@ -105,10 +39,10 @@ function pokemon(id) {
     pokemon_main.appendChild(image_p); 
 
     var nspan = document.getElementsByTagName("span");
-    nspan[0].innerText = description[id-1].status;
-    nspan[1].innerText = description[id-1].level;
-    nspan[2].innerText = description[id-1].type; 
-    nspan[3].innerText = description[id-1].hability;
-    nspan[4].innerText = description[id-1].height;
-    nspan[5].innerText = description[id-1].weight;
+    nspan[0].innerText = statuss[id-1];
+    nspan[1].innerText = level[id-1];
+    nspan[2].innerText = type[id-1]; 
+    nspan[3].innerText = hability[id-1];
+    nspan[4].innerText = height[id-1];
+    nspan[5].innerText = weight[id-1];
 }
