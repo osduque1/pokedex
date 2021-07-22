@@ -11,12 +11,12 @@ const [statuss, level, type, hability, height, weight] = [
 window.onload = () => {
     var footer = document.getElementById("footer_poke");
     for (let index = 1; index < 10; index++) {
-        let images = document.createElement("img");
-        images.src = `https://pokeres.bastionbot.org/images/pokemon/${index}.png`;
-        images.alt = index;
-        images.className = "pokemon";
-        images.setAttribute('onclick',`pokemon(${index})`);
-        footer.appendChild(images);  
+        let images_footer = document.createElement("img");
+        images_footer.src = `https://pokeres.bastionbot.org/images/pokemon/${index}.png`;
+        images_footer.alt = index;
+        images_footer.className = "pokemon";
+        images_footer.setAttribute('onclick',`pokemon(${index})`);
+        footer.appendChild(images_footer);  
     }
 }
 
@@ -31,12 +31,12 @@ function pokemon(id) {
     etiquetaAudio.play();
 
     let pokemon_main = document.getElementById("content_pokemons");
-    let image_p = document.createElement("img");
-    image_p.src = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
-    image_p.alt = id;
-    image_p.id = id;
-    image_p.className = "pokemon_main";
-    pokemon_main.appendChild(image_p); 
+    let img_pokemain = document.createElement("img");
+    img_pokemain.src = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
+    img_pokemain.alt = id;
+    img_pokemain.id = id;
+    img_pokemain.className = "pokemon_main";
+    pokemon_main.appendChild(img_pokemain); 
 
     var nspan = document.getElementsByTagName("span");
     nspan[0].innerText = statuss[id-1];
