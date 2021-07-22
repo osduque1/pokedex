@@ -1,8 +1,5 @@
-body{
-    background-color: black;
-}
 
-p{
+h1{
     font-family: cursive;
     font-size: 22px;
     color: #03bcda;
@@ -10,12 +7,16 @@ p{
     font-weight: bold;
 }
 
+p{
+    font-family: cursive;
+    font-size: 15px;
+    color: #03bcda;
+    user-select: none;
+    font-weight: bold;
+}
+
 .wrapper{
-    width: 90%;
     margin: 0px auto;
-    border: solid red 5px;
-    background-color: gray;
-    border-radius: 10px;
 }
 
 .header {
@@ -28,36 +29,36 @@ p{
 
 .logo{
     margin: 10px;
-    width: 250px;
+    width: 175px;
 }
 
 .main{
     display:flex;
     justify-content: center;
+    flex-direction: column;
+    background: gray;
 }
 
 .name_poke{
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
+    width: 86%;
+    max-width: 350px;
+    margin: 10px auto;
     background-color: white;
     border-radius: 10px;
     text-align: center;
 }
 
 .content_pokemons{
-    padding: 10px;
     border-radius: 10px;
-    margin: 10px;
-    height: 35vh;
+    text-align: center;
 }
 
 .status{
-    margin: 10px;
-    padding: 10px;
+    width: 90%;
+    max-width: 360px;
+    margin: 10px auto;
     background-color: white;
     border-radius: 10px;
-    width: 360px;
     display: flex;
     justify-content: center;
 }
@@ -69,7 +70,7 @@ table{
 
 td{
     font-family: cursive;
-    font-size: 22px;
+    font-size: 15px;
     color: #03bcda;
     user-select: none;
     font-weight: bold;
@@ -98,8 +99,8 @@ span{
 }
 
 .pokemon_main{
-    width: 205px;
-    margin-left: 85px;
+    width: 125px;
+    margin: 0 auto;
 }
 
 .pokemon:hover{
@@ -107,11 +108,15 @@ span{
     box-shadow: 5px 5px 5px 5px black;
 }
 
-@media (min-width: 850px) and (max-width: 1009px) {
+#footer_poke{
+    display: flex;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-    .wrapper{
-        border: solid red 4px;
-    }
+@media (min-width: 850px) and (max-width: 1009px) {
 
     .header {
         justify-content: center;
@@ -120,10 +125,6 @@ span{
     .main {
         flex-direction: column;
         align-items: center;
-    }
-
-    .content_pokemons {
-        height: 10vh;
     }
 
     td{
@@ -141,12 +142,26 @@ span{
 
     #footer_poke{
         width: 450px;
-        margin-left: 90px;
     }
 }
 
 @media (min-width: 1010px) and (max-width: 1099px){    
     #footer_poke{
         width: 600px;
+    }
+}
+
+@media (max-width: 385px) and (min-width: 315px){
+    .pokemon{
+        width: 19px;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+}
+@media (max-width: 520px) and (min-width: 410px){
+    .pokemon{
+        width: 43px;
     }
 }

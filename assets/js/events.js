@@ -1,4 +1,4 @@
-const name_pokes = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise"]
+const name_pokes = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise"];
 const [statuss, level, type, hability, height, weight] = [
     ["001", "002", "003", "004", "005", "006", "007", "008", "009"],
     ["10", "100", "1000", "15", "150", "1500", "20", "200", "2000"],
