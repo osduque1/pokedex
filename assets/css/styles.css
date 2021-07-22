@@ -153,15 +153,19 @@ span{
 
 @media (max-width: 385px) and (min-width: 315px){
     .pokemon{
-        width: 19px;
+        width: 60px;
     }
 
     h1{
         font-size: 15px;
     }
+    
+    td{
+        font-size: 10px;
+    }
 }
 @media (max-width: 520px) and (min-width: 410px){
     .pokemon{
-        width: 43px;
+        width: 92px;
     }
 }
