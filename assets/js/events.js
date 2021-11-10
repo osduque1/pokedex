@@ -12,7 +12,7 @@ window.onload = () => {
     var footer = document.getElementById("footer_poke");
     for (let index = 1; index < 10; index++) {
         let images_footer = document.createElement("img");
-        images_footer.src = `https://pokeres.bastionbot.org/images/pokemon/${index}.png`;
+        images_footer.src = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/00${index}.png`;
         images_footer.alt = index;
         images_footer.className = "pokemon";
         images_footer.setAttribute('onclick',`pokemon(${index})`);
@@ -32,7 +32,7 @@ function pokemon(id) {
 
     let pokemon_main = document.getElementById("content_pokemons");
     let img_pokemain = document.createElement("img");
-    img_pokemain.src = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
+    img_pokemain.src = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/00${id}.png`;
     img_pokemain.alt = id;
     img_pokemain.id = id;
     img_pokemain.className = "pokemon_main";
